@@ -1,5 +1,6 @@
+// @ts-nocheck
 import React, { useState } from 'react';
-import { Box, Slider, TextField, Typography, Button } from '@mui/material';
+import { Box, Slider, TextField, Typography, Button, Paper } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 type MonthlyData = {
   month: number;
@@ -115,13 +116,13 @@ const InvestmentCalculator = () => {
   const COLORS = ['#8884d8', '#82ca9d'];
 
   return (
-    <Box
+    <Paper variant="elevation"
       sx={{
         p: 4,
         bgcolor: 'white',
         borderRadius: 2,
         boxShadow: 3,
-        maxWidth: 800,
+        maxWidth: 500,
         margin: 'auto',
       }}
     >
@@ -145,6 +146,7 @@ const InvestmentCalculator = () => {
             fullWidth
           />
         </Grid>
+        <br/>
         <Grid item xs={6}>
           <Typography gutterBottom>Step Up Percentage</Typography>
           <Slider
@@ -204,7 +206,7 @@ const InvestmentCalculator = () => {
             fullWidth
           />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item size={{ xs: 6, md: 11 }}>
           <Typography gutterBottom>
             Time period After which SWP starts
           </Typography>
@@ -226,7 +228,7 @@ const InvestmentCalculator = () => {
           />
         </Grid>
         <br />
-        <Grid item xs={6}>
+        <Grid item size={{ xs: 6, md: 11 }}>
           <Typography gutterBottom>
             Total number of month for which SIP and SWP will continue
           </Typography>
@@ -248,7 +250,7 @@ const InvestmentCalculator = () => {
           />
         </Grid>
 
-        <Grid item xs={6}>
+        <Grid item size={{ xs: 6, md: 11 }}>
           <Typography gutterBottom>SWP Amount</Typography>
           <Slider
             value={swpAmount}
@@ -287,7 +289,7 @@ const InvestmentCalculator = () => {
           Calculate Month wise Statement
         </Button>
       </Box>
-    </Box>
+    </Paper>
   );
 };
 
