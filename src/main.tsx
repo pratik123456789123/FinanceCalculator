@@ -122,7 +122,7 @@ const InvestmentCalculator = () => {
         bgcolor: 'white',
         borderRadius: 2,
         boxShadow: 3,
-        maxWidth: 500,
+        maxWidth: 550,
         margin: 'auto',
       }}
     >
@@ -206,7 +206,7 @@ const InvestmentCalculator = () => {
             fullWidth
           />
         </Grid>
-        <Grid item size={{ xs: 6, md: 11 }}>
+        <Grid item size={{ xs: 8, md: 11 }}>
           <Typography gutterBottom>
             Time period After which SWP starts
           </Typography>
@@ -228,7 +228,7 @@ const InvestmentCalculator = () => {
           />
         </Grid>
         <br />
-        <Grid item size={{ xs: 6, md: 11 }}>
+        <Grid item size={{ xs: 8, md: 11 }}>
           <Typography gutterBottom>
             Total number of month for which SIP and SWP will continue
           </Typography>
@@ -250,7 +250,7 @@ const InvestmentCalculator = () => {
           />
         </Grid>
 
-        <Grid item size={{ xs: 6, md: 11 }}>
+        <Grid item size={{ xs: 8, md: 11 }}>
           <Typography gutterBottom>SWP Amount</Typography>
           <Slider
             value={swpAmount}
@@ -271,7 +271,7 @@ const InvestmentCalculator = () => {
         </Grid>
       </Grid>
 
-      <Box sx={{ mt: 4 }}>
+      <Box sx={{ mt: 4 }} display='flex' justifyContent='center'>
         <Button
           variant="contained"
           onClick={() =>
