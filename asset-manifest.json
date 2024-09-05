@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/FinanceCalculator/static/js/main.9e9b2061.js",
+    "index.html": "/FinanceCalculator/index.html",
+    "main.9e9b2061.js.map": "/FinanceCalculator/static/js/main.9e9b2061.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9e9b2061.js"
+  ]
+}
