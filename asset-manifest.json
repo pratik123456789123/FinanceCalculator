@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/FinanceCalculator/static/js/main.9e9b2061.js",
+    "main.js": "/FinanceCalculator/static/js/main.e5c9266e.js",
     "index.html": "/FinanceCalculator/index.html",
-    "main.9e9b2061.js.map": "/FinanceCalculator/static/js/main.9e9b2061.js.map"
+    "main.e5c9266e.js.map": "/FinanceCalculator/static/js/main.e5c9266e.js.map"
   },
   "entrypoints": [
-    "static/js/main.9e9b2061.js"
+    "static/js/main.e5c9266e.js"
   ]
 }
